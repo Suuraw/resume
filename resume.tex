@@ -1,0 +1,149 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Dependencies
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+
+\input{glyphtounicode}
+
+% Page Styling
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+\titleformat{\subsection}{\vspace{-4pt}\scshape\raggedright\normalsize}{\hspace{-.1in}}{0em}{}[\color{black}\vspace{-6pt}]
+
+% Ensure ATS parsable
+\pdfgentounicode=1
+
+% Custom Commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-3pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \small#2 \\
+  \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\begin{document}
+
+% Heading
+\begin{center}
+  \textbf{\Huge \scshape Sujay Kumar} \\ \vspace{8pt}
+  \small
+  \faGithub\ \href{https://github.com/Suuraw}{github.com/Suuraw} \quad
+  \faLinkedin\ \href{https://linkedin.com/in/sujay-kumar-4b85b5252}{linkedin.com/in/sujay-kumar-4b85b5252} \quad
+  \faEnvelope\ \href{mailto:sujayraw13@gmail.com}{sujayraw13@gmail.com} \quad
+  \faPhone\ 7750015353
+\end{center}
+
+% Summary
+\section{Summary}
+\resumeSubHeadingListStart
+  \small{\item{Computer Science student skilled in MERN Stack and DevOps. Proficient in building responsive websites and learning Go for scalable backend solutions.}}
+\resumeSubHeadingListEnd
+
+% Education
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{KIIT University}{Bhubaneswar, Odisha}{B.Tech, Computer Science}{Exp. Sep 2026, CGPA: 8.00}
+  \resumeSubheading{St. Joseph School}{Bhagalpur, Bihar}{12th Grade (ISCE)}{Jun 2022, 77.8\%}
+  \resumeSubheading{Mount Assisi School}{Bhagalpur, Bihar}{10th Grade (ISCE)}{Jun 2020, 85.17\%}
+\resumeSubHeadingListEnd
+
+% Skills
+\section{Skills}
+\resumeSubHeadingListStart
+  \small{\item{
+    \textbf{Languages}: C, Java, JavaScript, TypeScript, Python, Go \\
+    \textbf{Web}: HTML, CSS, Tailwind CSS, React.js, Next.js, Node.js, Express.js, REST APIs \\
+    \textbf{Databases/Tools}: MongoDB, PostgreSQL, Firebase, Supabase, Prisma, Postman \\
+    \textbf{DevOps/Cloud}: Git, GitHub, GCP, Cloudflare
+  }}
+\resumeSubHeadingListEnd
+
+% Experience
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{KIIT E-Cell} $|$ \emph{Web Dev Intern}}{Sep 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built MERN Stack course dashboard, boosting onboarding efficiency.}
+    \resumeItem{Integrated Google Sheet API for automated leaderboard updates.}
+    \resumeItem{Optimized performance, reducing load times for better UX.}
+  \resumeItemListEnd
+  \resumeProjectHeading{\textbf{Banao Technologies} $|$ \emph{Full Stack Developer}}{2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Developed UI components for photonBoxx, improving responsiveness by 25\%. \href{https://sujays-organization-1.gitbook.io/photonboxx-contribution/}{Link}}
+    \resumeItem{Fixed 15+ UI bugs, increasing uptime by 20\%.}
+    \resumeItem{Optimized CRUD operations for HobbyCue admin routes. \href{https://sujays-organization-1.gitbook.io/untitled/}{Link}}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Projects
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{\href{https://ecohort.vercel.app}{E-Cell Cohort \faExternalLink}} $|$ \emph{MERN Stack}}{2024}
+  \resumeItemListStart
+    \resumeItem{Built MERN Stack site with real-time updates for user engagement.}
+    \resumeItem{Automated leaderboard at KIIT E-Cell for efficiency.}
+  \resumeItemListEnd
+  \resumeProjectHeading{\textbf{\href{https://note-audio-ninja.vercel.app}{NoteNinja \faExternalLink}} $|$ \emph{React.js, Node.js}}{2024}
+  \resumeItemListStart
+    \resumeItem{Created UI with React.js and backend with Node.js using Gemini APIs.}
+    \resumeItem{Enabled text/audio summarization with optimized processing.}
+  \resumeItemListEnd
+  \resumeProjectHeading{\textbf{\href{https://todoagent.vercel.app}{ToDoAgent \faExternalLink}} $|$ \emph{MERN Stack}}{2023}
+  \resumeItemListStart
+    \resumeItem{Developed prompt-based task tool to boost team productivity.}
+    \resumeItem{Deployed on Render for scalability.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Extracurricular Activities
+\section{Activities}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{National Basketball Player} $|$ \emph{Athlete}}{}
+  \resumeItemListStart
+    \resumeItem{Represented state and college at national competitions.}
+  \resumeItemListEnd
+  \resumeProjectHeading{\textbf{Smart India Hackathon 2024} $|$ \emph{Competitor}}{2024}
+  \resumeItemListStart
+    \resumeItem{Top 50 team from college.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
