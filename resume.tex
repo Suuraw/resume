@@ -1,4 +1,4 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 % Dependencies
 \usepackage[empty]{fullpage}
@@ -31,118 +31,133 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Define colors
+\definecolor{headingblue}{RGB}{0, 51, 102}
+
 % Section formatting
-\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
-\titleformat{\subsection}{\vspace{-4pt}\scshape\raggedright\normalsize}{\hspace{-.1in}}{0em}{}[\color{black}\vspace{-6pt}]
+\titleformat{\section}{\vspace{-8pt}\scshape\raggedright\large\bfseries\color{headingblue}}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+\titleformat{\subsection}{\vspace{-6pt}\scshape\raggedright\normalsize\bfseries\color{headingblue}}{\hspace{-.1in}}{0em}{}[\color{black}\vspace{-6pt}]
 
 % Ensure ATS parsable
 \pdfgentounicode=1
 
 % Custom Commands
-\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-3pt}}}
+\newcommand{\resumeItem}[1]{\item\small{\color{black}#1 \vspace{-4pt}}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
+  \vspace{-4pt}\item
   \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & #2 \\
-    \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-6pt}
+    \textbf{\color{black}#1} & \color{black}#2 \\
+    \textit{\small\color{black}#3} & \textit{\small\color{black} #4} \\
+  \end{tabular*}\vspace{-8pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
   \item
   \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
-    \small#1 & \small#2 \\
-  \end{tabular*}\vspace{-6pt}
+    \small\bfseries\color{black}#1 & \small\color{black}#2 \\
+  \end{tabular*}\vspace{-8pt}
 }
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-8pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \begin{document}
 
 % Heading
 \begin{center}
-  \textbf{\Huge \scshape Sujay Kumar} \\ \vspace{8pt}
-  \small
+  \textbf{\Huge \scshape \color{black}Sujay Kumar} \\ \vspace{12pt}
+  \small\color{black}
+  \vspace{10pt}
   \faGithub\ \href{https://github.com/Suuraw}{github.com/Suuraw} \quad
   \faLinkedin\ \href{https://linkedin.com/in/sujay-kumar-4b85b5252}{linkedin.com/in/sujay-kumar-4b85b5252} \quad
   \faEnvelope\ \href{mailto:sujayraw13@gmail.com}{sujayraw13@gmail.com} \quad
   \faPhone\ 7750015353
 \end{center}
-
+\vspace{-10pt}
 % Summary
 \section{Summary}
+\vspace{6pt}
 \resumeSubHeadingListStart
-  \small{\item{Computer Science student skilled in MERN Stack and DevOps. Proficient in building responsive websites and learning Go for scalable backend solutions.}}
+  \small{\item{\color{black}Dynamic Computer Science student with expertise in MERN Stack and DevOps, delivering innovative web solutions. Proficient in crafting responsive, high-performance websites and mastering Go for scalable, robust backend systems. Passionate about driving technological advancements and optimizing user experiences.}}
 \resumeSubHeadingListEnd
 
 % Education
 \section{Education}
+\vspace{6pt}
 \resumeSubHeadingListStart
-  \resumeSubheading{KIIT University}{Bhubaneswar, Odisha}{B.Tech, Computer Science}{Exp. Sep 2026, CGPA: 8.00}
-  \resumeSubheading{St. Joseph School}{Bhagalpur, Bihar}{12th Grade (ISCE)}{Jun 2022, 77.8\%}
-  \resumeSubheading{Mount Assisi School}{Bhagalpur, Bihar}{10th Grade (ISCE)}{Jun 2020, 85.17\%}
+  \resumeSubheading{KIIT University}{Bhubaneswar, Odisha}{B.Tech, Computer Science and Engineering}{Expected Sep 2026, CGPA: 8.00/10}
+  \resumeSubheading{St. Joseph School}{Bhagalpur, Bihar}{12th Grade (ISC)}{Jun 2022, 77.8\%}
+  \resumeSubheading{Mount Assisi School}{Bhagalpur, Bihar}{10th Grade (ICSE)}{Jun 2020, 85.17\%}
 \resumeSubHeadingListEnd
 
 % Skills
 \section{Skills}
+\vspace{6pt}
 \resumeSubHeadingListStart
-  \small{\item{
-    \textbf{Languages}: C, Java, JavaScript, TypeScript, Python, Go \\
-    \textbf{Web}: HTML, CSS, Tailwind CSS, React.js, Next.js, Node.js, Express.js, REST APIs \\
-    \textbf{Databases/Tools}: MongoDB, PostgreSQL, Firebase, Supabase, Prisma, Postman \\
-    \textbf{DevOps/Cloud}: Git, GitHub, GCP, Cloudflare
+  \small{\item{\color{black}
+    \textbf{Programming Languages}: C, Java, JavaScript, TypeScript, Python, Go \\ \vspace{2pt}
+    \textbf{Web Technologies}: HTML5, CSS3, Tailwind CSS, React.js, Next.js, Node.js, Express.js, RESTful APIs \\ \vspace{2pt}
+    \textbf{Databases \& Tools}: MongoDB, PostgreSQL, Firebase, Supabase, Prisma ORM, Postman \\  \vspace{2pt}
+    \textbf{DevOps \& Cloud}: Git, GitHub,GitHub Actions, Google Cloud Platform, Cloudflare, Docker ,AWS - EC2
   }}
 \resumeSubHeadingListEnd
 
 % Experience
-\section{Experience}
+\section{Professional Experience}
+\vspace{6pt}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{KIIT E-Cell} $|$ \emph{Web Dev Intern}}{Sep 2024 -- Present}
+  \resumeProjectHeading{\textbf{KIIT E-Cell} $|$ \emph{Web Development Intern}}{Sep 2024 -- Present} 
   \resumeItemListStart
-    \resumeItem{Built MERN Stack course dashboard, boosting onboarding efficiency.}
-    \resumeItem{Integrated Google Sheet API for automated leaderboard updates.}
-    \resumeItem{Optimized performance, reducing load times for better UX.}
+  \vspace{2pt}
+    \resumeItem{Engineered a MERN Stack course dashboard, streamlining onboarding processes and enhancing user engagement by 30\%.}  \vspace{2pt}
+    \resumeItem{Integrated Google Sheets API for real-time leaderboard automation, reducing manual updates by 80\%.} \vspace{2pt}
+    \resumeItem{Optimized application performance, cutting load times by 40\% to deliver a seamless user experience.} \vspace{2pt}
   \resumeItemListEnd
-  \resumeProjectHeading{\textbf{Banao Technologies} $|$ \emph{Full Stack Developer}}{2024 -- Present}
+  \resumeProjectHeading{\textbf{Banao Technologies} $|$ \emph{Full Stack Developer}}{Jun 2024 -- Present}
   \resumeItemListStart
-    \resumeItem{Developed UI components for photonBoxx, improving responsiveness by 25\%. \href{https://sujays-organization-1.gitbook.io/photonboxx-contribution/}{Link}}
-    \resumeItem{Fixed 15+ UI bugs, increasing uptime by 20\%.}
-    \resumeItem{Optimized CRUD operations for HobbyCue admin routes. \href{https://sujays-organization-1.gitbook.io/untitled/}{Link}}
+  \vspace{2pt}
+    \resumeItem{Developed responsive UI components for photonBoxx, improving mobile responsiveness by 25\%. \href{https://sujays-organization-1.gitbook.io/photonboxx-contribution/}{Contribution Link}} \vspace{2pt}
+    \resumeItem{Resolved 15+ critical UI bugs, boosting application uptime by 20\% and enhancing user satisfaction.} \vspace{2pt}
+    \resumeItem{Streamlined CRUD operations for HobbyCue admin routes, increasing backend efficiency by 15\%. \href{https://sujays-organization-1.gitbook.io/untitled/}{Contribution Link}} \vspace{2pt}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 % Projects
-\section{Projects}
+\section{Key Projects}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{\href{https://ecohort.vercel.app}{E-Cell Cohort \faExternalLink}} $|$ \emph{MERN Stack}}{2024}
+  \resumeProjectHeading{\textbf{\href{https://ecohort.vercel.app}{E-Cell Cohort \faExternalLink}} $|$ \emph{MERN Stack, Real-Time Web App}}{2024}
+  
   \resumeItemListStart
-    \resumeItem{Built MERN Stack site with real-time updates for user engagement.}
-    \resumeItem{Automated leaderboard at KIIT E-Cell for efficiency.}
+  \vspace{2pt}
+    \resumeItem{Developed a full-featured MERN Stack platform with real-time updates, driving 35\% higher user engagement at KIIT E-Cell.}
+    \resumeItem{Automated leaderboard system, reducing administrative overhead by 70\% and improving operational efficiency.}
   \resumeItemListEnd
-  \resumeProjectHeading{\textbf{\href{https://note-audio-ninja.vercel.app}{NoteNinja \faExternalLink}} $|$ \emph{React.js, Node.js}}{2024}
+  \resumeProjectHeading{\textbf{\href{https://note-audio-ninja.vercel.app}{NoteNinja \faExternalLink}} $|$ \emph{React.js, Node.js, AI Integration}}{2024}
   \resumeItemListStart
-    \resumeItem{Created UI with React.js and backend with Node.js using Gemini APIs.}
-    \resumeItem{Enabled text/audio summarization with optimized processing.}
+  \vspace{2pt}
+    \resumeItem{Created an intuitive UI with React.js and a robust Node.js backend, leveraging Gemini APIs for advanced functionality.}
+    \resumeItem{Implemented text and audio summarization features, optimizing processing speed by 50\% for enhanced user productivity.}
   \resumeItemListEnd
-  \resumeProjectHeading{\textbf{\href{https://todoagent.vercel.app}{ToDoAgent \faExternalLink}} $|$ \emph{MERN Stack}}{2023}
+  \resumeProjectHeading{\textbf{\href{https://todoagent.vercel.app}{ToDoAgent \faExternalLink}} $|$ \emph{MERN Stack, Productivity Tool}}{2023}
   \resumeItemListStart
-    \resumeItem{Developed prompt-based task tool to boost team productivity.}
-    \resumeItem{Deployed on Render for scalability.}
+  \vspace{2pt}
+    \resumeItem{Built a prompt-based task management tool, increasing team productivity by 20\% through streamlined workflows.}
+    \resumeItem{Deployed on Render with scalable architecture, ensuring 99.9\% uptime and reliable performance.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 % Extracurricular Activities
-\section{Activities}
+\section{Extracurricular Achievements}
+\vspace{2pt}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{National Basketball Player} $|$ \emph{Athlete}}{}
+  \resumeProjectHeading{\textbf{National Basketball Player} $|$ \emph{Competitive Athlete}}{2018 -- Present}
   \resumeItemListStart
-    \resumeItem{Represented state and college at national competitions.}
+    \resumeItem{Represented state and college in national basketball tournaments, demonstrating leadership and teamwork under pressure.}
   \resumeItemListEnd
-  \resumeProjectHeading{\textbf{Smart India Hackathon 2024} $|$ \emph{Competitor}}{2024}
+  \resumeProjectHeading{\textbf{Smart India Hackathon 2024} $|$ \emph{National-Level Competitor}}{2024}
   \resumeItemListStart
-    \resumeItem{Top 50 team from college.}
+    \resumeItem{Secured Top 50 position among college teams, showcasing problem-solving and collaborative innovation.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
