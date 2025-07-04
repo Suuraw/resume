@@ -1,4 +1,4 @@
-## Pipeline for automating resume building
+## Pipeline for automating resume build
 ---
 ### 3 WorkFlows
 
