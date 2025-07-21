@@ -9,8 +9,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{fontawesome}
-\usepackage{hyperref}
-\usepackage{xcolor}  % Added for setting text color
+\usepackage{xcolor}
 
 \input{glyphtounicode}
 
@@ -39,80 +38,84 @@
 \color{black}
 
 % Section formatting
-\titleformat{\section}{\vspace{-8pt}\scshape\raggedright\large\bfseries\color{headingblue}}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
-\titleformat{\subsection}{\vspace{-6pt}\scshape\raggedright\normalsize\bfseries\color{headingblue}}{\hspace{-.1in}}{0em}{}[\color{black}\vspace{-6pt}]
+\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large\bfseries\color{headingblue}}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+\titleformat{\subsection}{\vspace{-4pt}\scshape\raggedright\normalsize\bfseries\color{headingblue}}{\hspace{-.1in}}{0em}{}[\color{black}\vspace{-4pt}]
 
 % Ensure ATS parsable
 \pdfgentounicode=1
 
 % Custom Commands
-\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-4pt}}}
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-3pt}}}
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-4pt}\item
+  \vspace{-3pt}\item
   \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-8pt}
+  \end{tabular*}\vspace{-6pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
   \item
   \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
     \small\bfseries#1 & \small#2 \\
-  \end{tabular*}\vspace{-8pt}
+  \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeadingWithLink}[3]{
+  \item
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+    \small\bfseries#1 (\href{#2}{#2}) & \small#3 \\
+  \end{tabular*}\vspace{-6pt}
 }
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-8pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-6pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \begin{document}
 
 % Heading
 \begin{center}
-  \textbf{\Huge \scshape Sujay Kumar} \\ \vspace{12pt}
+  \textbf{\Huge \scshape Sujay Kumar} \\ \vspace{8pt}
   \small
-  \vspace{10pt}
+  \vspace{2pt}
   \faGithub\ \href{https://github.com/Suuraw}{github.com/Suuraw} \quad
   \faLinkedin\ \href{https://linkedin.com/in/sujay-kumar-4b85b5252}{linkedin.com/in/sujay-kumar-4b85b5252} \quad
   \faEnvelope\ \href{mailto:sujayraw13@gmail.com}{sujayraw13@gmail.com} \quad
   \faPhone\ 7750015353
 \end{center}
-\vspace{-10pt}
+\vspace{-8pt}
 
 % Summary
 \section{Summary}
-\vspace{6pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
-  \item{Dynamic Computer Science student with expertise in MERN Stack and DevOps, delivering innovative web solutions. Proficient in crafting responsive, high-performance websites and mastering Go for scalable, robust backend systems. Passionate about driving technological advancements and optimizing user experiences.}
+\item{Computer Science student focused on containerization, automation, and Kubernetes for scalable web solutions. Passionate about DevOps and cloud-native workflows; write technical blogs at \href{https://sujay.is-a.dev/blog}{\textcolor{blue}{\textbf{\textit{sujay.is-a.dev/blog}}}}.}
 \resumeSubHeadingListEnd
 
 % Education
 \section{Education}
-\vspace{6pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
   \resumeSubheading{KIIT University}{Bhubaneswar, Odisha}{B.Tech, Computer Science and Engineering}{Expected Sep 2026, CGPA: 8.11/10}
-  \resumeSubheading{St. Joseph School}{Bhagalpur, Bihar}{12th Grade (ISC)}{Jun 2022, 77.8\%}
-  \resumeSubheading{Mount Assisi School}{Bhagalpur, Bihar}{10th Grade (ICSE)}{Jun 2020, 85.17\%}
 \resumeSubHeadingListEnd
 
 % Skills
 \section{Skills}
-\vspace{6pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
   \item{
-    \textbf{Programming Languages}: C, Java, JavaScript, TypeScript, Python, ABAP \\ \vspace{2pt}
-    \textbf{Web Technologies}: HTML5, CSS3, Tailwind CSS, React.js, Next.js, Node.js, Express.js,FastApi, RESTful APIs, SAP \\ \vspace{2pt}
-    \textbf{Databases \& Tools}: MongoDB, PostgreSQL, Firebase, Supabase, Prisma ORM, Postman \\  \vspace{2pt}
+    \textbf{Programming Languages}: C, Java, JavaScript, TypeScript, Python \\ \vspace{2pt}
+    \textbf{Web Technologies}: HTML5, CSS3, Tailwind CSS, React.js, Next.js, Node.js, Express.js, FastAPI, RESTful APIs \\ \vspace{2pt}
+    \textbf{Databases \& Tools}: MongoDB, PostgreSQL, Firebase, Supabase, Prisma ORM, Postman \\ \vspace{2pt}
     \textbf{DevOps \& Cloud}: Git, GitHub, GitHub Actions, Google Cloud Platform, Cloudflare, Docker, AWS - EC2
   }
 \resumeSubHeadingListEnd
 
 % Experience
 \section{Professional Experience}
-\vspace{6pt}
+\vspace{4pt}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{IIT Kharagpur} $|$ \emph{Research Collaborator}}{2025 -- Present}
+  \resumeProjectHeading{\textbf{IIT Kharagpur} $|$ \emph{Research Collaborator}}{April 2025 -- Jun 2025}
   \resumeItemListStart
     \resumeItem{Collaborated with PhD students to develop a proxy index for measuring renewable energy market trends by creating a data pipeline.}
     \resumeItem{Utilized generative AI to create signaling keywords, integrated into a data pipeline for scraping the Scopus database, saved results to Excel, and visualized market trends.}
@@ -120,9 +123,10 @@
 
   \resumeProjectHeading{\textbf{KIIT E-Cell} $|$ \emph{Full Stack Developer}}{Sep 2024 -- Present}
   \resumeItemListStart
-    \resumeItem{Engineered a MERN Stack course dashboard, streamlining onboarding processes and enhancing user engagement.}
-    \resumeItem{Integrated Google Sheets API for real-time leaderboard automation, reducing manual updates.}
-    \resumeItem{Optimized application performance, reducing load times to deliver a seamless user experience.}
+\resumeItem{Served as Full Stack Developer and Built a course dashboard using the MERN Stack and integrated Google Sheets API}
+\resumeItem{Led the design and deployment of the organization's official website to improve outreach and digital presence.}
+\resumeItem{Organized and managed an internal hackathon, overseeing the event's planning, logistics, and execution.}
+
   \resumeItemListEnd
 
   \resumeProjectHeading{\textbf{AGT Pvt Ltd} $|$ \emph{Full Stack Developer}}{Dec 2024 -- April 2025}
@@ -136,22 +140,27 @@
 % Projects
 \section{Key Projects}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{\href{https://ecohort.vercel.app}{E-Cell Cohort \faExternalLink}} $|$ \emph{MERN Stack, Real-Time Web App}}{2024}
+  \resumeProjectHeadingWithLink{\textbf{ApplySmart}}{https://www.applysmart.me} {Next.js, Express, Prisma, MongoDB, AWS, Whisper, OpenAI API $|$ 2025}
   \resumeItemListStart
-    \resumeItem{Developed a full-featured MERN Stack platform with real-time updates, improving user engagement at KIIT E-Cell.}
-    \resumeItem{Automated leaderboard system, reducing administrative overhead and enhancing operational efficiency.}
+  \resumeItem{Built a career support platform to streamline job preparation for college students by offering AI-powered resume analysis, job application automation, and mock interview simulations.}
+  \resumeItem{Developed an ATS scoring and resume analysis tool with chatbot suggestions to enhance resume alignment with job roles.}
+  \resumeItem{Automated job application form-filling by generating pre-filled form replicas, along with custom cover letters and job-resume comparison insights.Currently,building our own Speech to Text model.}
+  % \resumeItem{Integrated OpenAI API and Whisper-based Speech-to-Text/Text-to-Speech models to simulate mock interviews with dynamically generated questions.}
+  % \resumeItem{Reduced resume rejection by improving alignment with job requirements and enhancing student interview readiness.}
   \resumeItemListEnd
 
-  \resumeProjectHeading{\textbf{\href{https://www.applysmart.me/}{AlignResume \faExternalLink}} $|$ \emph{MERN Stack, AI-Powered Resume Tool}}{2024}
+  \resumeProjectHeadingWithLink{\textbf{Watch2Learn}}{https://www.watch2learn.app}{Next.js , FastAPI , Python , Docker $|$ 2025}
   \resumeItemListStart
-    \resumeItem{Built a platform for students to upload resumes, gain insights, and interact via a bot for resume analysis against job descriptions.}
-    \resumeItem{Implemented features for generating cover letters and partially automating job application processes, enhancing user efficiency.}
+  \resumeItem{Developed a YouTube-based study tool that extracts and summarizes transcripts using generative AI for detailed and concise learning.}
+  \resumeItem{Solved the problem of vague incomplete video summarization by implementing a markdown-powered formatting engine.}
+  \resumeItem{Enabled quiz generation from summaries to test retention, with persistent history to track user learning progress.}
   \resumeItemListEnd
 
-  \resumeProjectHeading{\textbf{\href{https://todoagent.vercel.app}{ToDoAgent \faExternalLink}} $|$ \emph{MERN Stack, Productivity Tool}}{2023}
+  \resumeProjectHeadingWithLink{\textbf{E-Cell Cohort}}{https://ecohort.vercel.app}{React.js , Express , Sheet API , PostgreSQL $|$ 2024}
   \resumeItemListStart
-    \resumeItem{Built a prompt-based task management tool, improving team productivity through streamlined workflows.}
-    \resumeItem{Deployed on Render with scalable architecture, ensuring high uptime and reliable performance.}
+  \resumeItem{Built a learning dashboard for onboarding KIIT E-Cell recruits with week-wise content, quizzes, and progress tracking.}
+  \resumeItem{Solved manual leaderboard updates by integrating Google Sheets API for real-time quiz data and ranking display.}
+  \resumeItem{Enhanced engagement through gamified elements and responsive UI deployed on Vercel with Tailwind styling.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
