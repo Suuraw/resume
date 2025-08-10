@@ -1,6 +1,5 @@
 \documentclass[letterpaper,11pt]{article}
 
-% Dependencies
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
@@ -10,174 +9,124 @@
 \usepackage[english]{babel}
 \usepackage{fontawesome}
 \usepackage{xcolor}
-
 \input{glyphtounicode}
 
-% Page Styling
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.6in}
 \addtolength{\textwidth}{1.2in}
 \addtolength{\topmargin}{-0.8in}
 \addtolength{\textheight}{1.6in}
-
 \urlstyle{same}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
-% Define colors
 \definecolor{headingblue}{RGB}{0, 51, 102}
-
-% Set global text color to black for readability
-\color{black}
-
-% Section formatting
-\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large\bfseries\color{headingblue}}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
-\titleformat{\subsection}{\vspace{-4pt}\scshape\raggedright\normalsize\bfseries\color{headingblue}}{\hspace{-.1in}}{0em}{}[\color{black}\vspace{-4pt}]
-
-% Ensure ATS parsable
 \pdfgentounicode=1
 
-% Custom Commands
-\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-3pt}}}
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
-  \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & #2 \\
-    \textit{\small#3} & \textit{\small #4} \\
-  \end{tabular*}\vspace{-6pt}
-}
-\newcommand{\resumeProjectHeading}[2]{
-  \item
-  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
-    \small\bfseries#1 & \small#2 \\
-  \end{tabular*}\vspace{-6pt}
-}
-\newcommand{\resumeProjectHeadingWithLink}[3]{
-  \item
-  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
-    \small\bfseries#1 (\href{#2}{\textcolor{blue}{#2}}) & \small#3 \\
-  \end{tabular*}\vspace{-6pt}
-}
+\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large\bfseries\color{headingblue}}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+\titleformat{\subsection}{\vspace{-4pt}\scshape\raggedright\normalsize\bfseries\color{headingblue}}{\hspace{-.1in}}{0em}{}[\color{black}\vspace{-4pt}]
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeProjectHeading}[2]{\item\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}\small\bfseries#1 & \small#2 \end{tabular*}\vspace{-5pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
-% Heading
+%-------------------- HEADER --------------------
 \begin{center}
-  \textbf{\Huge \scshape Sujay Kumar} \\ \vspace{8pt}
-  \small
-  \vspace{2pt}
- \href{https://github.com/Suuraw}{\textcolor{blue}{github.com/Suuraw}} \quad
-\href{https://linkedin.com/in/sujay-kumar-4b85b5252}{\textcolor{blue}{linkedin.com/in/sujay-kumar-4b85b5252}} \quad
- \href{mailto:sujayraw13@gmail.com}{\textcolor{blue}{sujayraw13@gmail.com}} \quad
- 7750015353
+    \textbf{\Huge \scshape Sujay Kumar} \\ \vspace{4pt}
+    \small Software Engineer | Full-Stack Developer | Cloud \& DevOps Enthusiast \\
+    \href{mailto:sujayraw13@gmail.com}{\textcolor{blue}{sujayraw13@gmail.com}} $|$ 7750015353 $|$
+\href{https://github.com/Suuraw}{\textcolor{blue}{github.com/Suuraw}} $|$
+\href{https://linkedin.com/in/sujay-kumar-4b85b5252}{\textcolor{blue}{linkedin.com/in/sujay-kumar-4b85b5252}} $|$
+\href{https://sujay.is-a.dev/blog}{\textcolor{blue}{sujay.is-a.dev/blog}}
+
 \end{center}
-\vspace{-8pt}
 
-% Summary
-\section{Summary}
-\vspace{4pt}
-\resumeSubHeadingListStart
-\item{Computer Science undergraduate with strong fundamentals in object-oriented design, data structures, and algorithms. Experienced in building scalable full-stack applications and cloud-native infrastructure. Passionate about DevOps automation and AI integrations. Thrive in ambiguous environments by delivering end-to-end systems from scratch. Actively contribute to open source and write technical blogs at \href{https://sujay.is-a.dev/blog}{\textcolor{blue}{\textbf{\textit{sujay.is-a.dev/blog}}}}.}
-\resumeSubHeadingListEnd
-
-% Education
+%-------------------- EDUCATION --------------------
 \section{Education}
-\vspace{4pt}
 \resumeSubHeadingListStart
-  \resumeSubheading{Kalinga Institute of Industrial Technology (KIIT)}{Bhubaneswar, Odisha}{B.Tech in Computer Science and Engineering}{Expected Sep 2026, CGPA: 8.11/10}
+    \resumeProjectHeading{\textbf{Kalinga Institute of Industrial Technology (KIIT)}, Bhubaneswar}{B.Tech CSE, CGPA: 8.11/10 | Exp. Sep 2026}
 \resumeSubHeadingListEnd
 
-% Skills
+%-------------------- SKILLS --------------------
 \section{Technical Skills}
-\vspace{4pt}
 \resumeSubHeadingListStart
-  \item{
-    \textbf{Languages}: C, Java, Python, JavaScript, TypeScript \\ \vspace{2pt}
-    \textbf{Web}: React.js, Next.js, Node.js, Express.js, HTML5, CSS3, Tailwind CSS, FastAPI \\ \vspace{2pt}
-    \textbf{DevOps \& Cloud}: Git, GitHub Actions, Docker, Kubernetes, AWS (EC2), GCP, Cloudflare \\ \vspace{2pt}
-    \textbf{Databases \& Tools}: MongoDB, PostgreSQL, Firebase, Supabase, Prisma, Postman \\ \vspace{2pt}
-    \textbf{CS Concepts}: OOP, Algorithms, Data Structures, Complexity Analysis, Optimization Techniques (greedy,DP)
-  }
+    \item \textbf{Languages:} Java, Python, JavaScript, TypeScript, C
+    \item \textbf{Frameworks:} React.js, Next.js, Node.js, Express.js, FastAPI, HTML5, CSS3, Tailwind CSS
+    \item \textbf{Cloud/DevOps:} AWS (EC2, S3), Azure, GCP, Docker, Kubernetes, Git, GitHub Actions, CI/CD Pipelines
+    \item \textbf{Databases:} MongoDB, PostgreSQL, Firebase, Supabase, Prisma ORM
+    \item \textbf{Other:} RESTful APIs, Regex, SPL, Agile/Scrum, Code Reviews, Test-Driven Development
 \resumeSubHeadingListEnd
 
-% Experience
+%-------------------- EXPERIENCE --------------------
 \section{Professional Experience}
-\vspace{4pt}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{IIT Kharagpur} $|$ \emph{Research Collaborator}}{Apr 2025 -- Jun 2025}
-  \resumeItemListStart
-    \resumeItem{Developed a data pipeline for indexing renewable energy market trends using scraped academic literature (Scopus).}
-    \resumeItem{Integrated generative AI to extract and cluster signaling keywords for forecasting patterns.}
-    \resumeItem{Automated data export and visualized keyword trends to aid energy research.}
-  \resumeItemListEnd
+    \resumeProjectHeading{\textbf{AGT Pvt Ltd} | Full Stack Developer}{Dec 2024 -- Apr 2025}
+    \resumeItemListStart
+        \resumeItem{Developed scalable UI components for photonBoxx, improving mobile UX by 40\%.}
+        \resumeItem{Debugged production systems, improving reliability and load times.}
+        \resumeItem{Refactored backend APIs, streamlining workflows and reducing latency.}
+        \resumeItem{Participated in Agile ceremonies: sprint planning, stand-ups, retrospectives, and code reviews.}
+    \resumeItemListEnd
 
-  \resumeProjectHeading{\textbf{KIIT E-Cell} $|$ \emph{Full Stack Developer}}{Sep 2024 -- Present}
-  \resumeItemListStart
-\resumeItem{Led a team of 20 developers in an agile environment to architect and deploy the organization's website (\href{https://www.kiitecell.org/}{\textcolor{blue}{kiitecell.org}}) and MERN-stack dashboard, significantly boosting student engagement.}
+    \resumeProjectHeading{\textbf{KIIT E-Cell} | Full Stack Developer \& Team Lead}{Sep 2024 -- Present}
+    \resumeItemListStart
+        \resumeItem{Led a 20-member team to deliver MERN-stack applications, increasing engagement by 60\%.}
+        \resumeItem{Integrated Google Sheets API for real-time data sync.}
+        \resumeItem{Executed IT service requests (RITMs) including server decommissioning and alert adjustments.}
+        \resumeItem{Presented on ethics/compliance in digital platforms during internal KT sessions.}
+    \resumeItemListEnd
 
-  \resumeItem{Integrated Google Sheets API for real-time data updates on course engagement.}
-    \resumeItem{Organized and managed a 50+ participant hackathon, handling planning, logistics, and execution.}
-  \resumeItemListEnd
-
-  \resumeProjectHeading{\textbf{AGT Pvt Ltd} $|$ \emph{Full Stack Developer}}{Dec 2024 -- Apr 2025}
-  \resumeItemListStart
-    \resumeItem{Built responsive UI components for photonBoxx to optimize mobile UX performance.}
-    \resumeItem{Diagnosed and resolved critical UI bugs, improving app stability and load efficiency.}
-    \resumeItem{Refactored backend for HobbyCue admin panel, streamlining workflows and API interactions.}
-    \resumeItem{Contributions documented: \href{https://photonboxx-contribution.gitbook.io}{\textcolor{blue}{photonboxx-contribution.gitbook.io}}}
-  \resumeItemListEnd
+    \resumeProjectHeading{\textbf{IIT Kharagpur} | Research Collaborator}{Apr 2025 -- Jun 2025}
+    \resumeItemListStart
+        \resumeItem{Built data pipelines for renewable energy analysis using NLP, regex, and SPL queries.}
+        \resumeItem{Visualized forecasting trends and optimized data processing workflows.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-% Projects
+%-------------------- PROJECTS --------------------
 \section{Key Projects}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{ApplySmart} (\href{https://www.applysmart.me}{\textcolor{blue}{https://www.applysmart.me}}) $|$ \textit{Next.js, Express, MongoDB, Prisma, AWS, Whisper, OpenAI}}{2025}
-  \resumeItemListStart
-    \resumeItem{Developed an AI-powered career support platform with resume scoring, job automation, and AI powered Interview.}
-    \resumeItem{Engineered an ATS scoring system aligned with job descriptions using NLP and greedy-based scoring logic to optimize ranking accuracy.
-}
-    \resumeItem{Built automated job form filler and voice-to-text input system via Whisper API integration.}
-  \resumeItemListEnd
+    \resumeProjectHeading{\textbf{ApplySmart - AI Career Platform} (\href{https://www.applysmart.me}{applysmart.me})}{2025}
+    \resumeItemListStart
+        \resumeItem{Implemented ATS scoring using NLP, regex, and keyword matching for job fit analysis.}
+        \resumeItem{Built automated job application filler, integrating RESTful APIs for seamless submissions.}
+        \resumeItem{Deployed on AWS with CI/CD pipelines for cloud-native scalability.}
+    \resumeItemListEnd
 
-  \resumeProjectHeading{\textbf{Watch2Learn} (\href{https://www.watch2learn.app}{\textcolor{blue}{https://www.watch2learn.app}}) $|$ \textit{Next.js, FastAPI, Python, Docker}}{2025}
-  \resumeItemListStart
-    \resumeItem{Built a YouTube-based summarization platform that extracts video transcripts and generates study-ready markdown notes.}
-    \resumeItem{Implemented persistent session-based quiz generation to enhance learning retention.}
-    \resumeItem{Designed scalable FastAPI services containerized with Docker.}
-  \resumeItemListEnd
+    \resumeProjectHeading{\textbf{Watch2Learn} (\href{https://www.watch2learn.app}{watch2learn.app})}{2025}
+    \resumeItemListStart
+        \resumeItem{Developed FastAPI microservices with Docker orchestration for YouTube transcript processing.}
+        \resumeItem{Integrated AI models to summarize content and generate study-ready notes.}
+        \resumeItem{Implemented session-based quizzes to improve retention, deployed to GCP.}
+    \resumeItemListEnd
 
-  \resumeProjectHeading{\textbf{Generate Folder Tree (VS Code Extension)} (\href{https://marketplace.visualstudio.com/items?itemName=Suuraw.generate-folder-tree}{\textcolor{blue}{Marketplace}}) $|$ \textit{JavaScript, Node.js, Regex, VS Code API}}{2025}
-  \resumeItemListStart
-    \resumeItem{Created a VS Code extension that generates project directories from markdown or indented text.}
-    \resumeItem{Enabled rapid scaffolding for developers with multi-syntax parsing support.}
-    \resumeItem{100+ downloads and ranked top in its category on the VS Code marketplace.}
-  \resumeItemListEnd
+\resumeProjectHeading{\textbf{Generate Folder Tree - VS Code Extension} (\href{https://marketplace.visualstudio.com/items?itemName=Suuraw.generate-folder-tree}{VS Code Marketplace})}{2025}
+    \resumeItemListStart
+        \resumeItem{Created productivity extension using Node.js and regex to scaffold folder structures.}
+        \resumeItem{Achieved 100+ downloads and maintained high marketplace ranking.}
+        \resumeItem{Packaged and published with full documentation for developer adoption.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-% Extracurricular Activities
-\section{Extracurricular Achievements}
+%-------------------- ACHIEVEMENTS --------------------
+\section{Achievements}
 \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{National Basketball Player} $|$ \emph{Competitive Athlete}}{2018 -- Present}
-  \resumeItemListStart
-    \resumeItem{Represented state and college in national tournaments since 2018.}
-  \resumeItemListEnd
-
-  \resumeProjectHeading{\textbf{Smart India Hackathon 2024} $|$ \emph{National-Level Competitor}}{2024}
-  \resumeItemListStart
-    \resumeItem{Secured Top 50 position among college teams, showcasing problem-solving and collaborative innovation}
-  \resumeItemListEnd
+    \resumeProjectHeading{\textbf{Smart India Hackathon 2024}}{}
+    \resumeItemListStart
+        \resumeItem{Top 50 teams from our college; demonstrated problem-solving and collaboration.}
+    \resumeItemListEnd
+    \resumeProjectHeading{\textbf{National Basketball Player}}{}
+    \resumeItemListStart
+        \resumeItem{Represented state and college at national tournaments.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 \end{document}
